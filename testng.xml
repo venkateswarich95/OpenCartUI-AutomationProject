@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="1">
+    <listeners>
+        <listener  class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Opencart-UI-Automation-jan15-2025">
+        <classes>
+           <class name="com.qa.opencart.testcases.HomePageTest"></class>
+            <class name="com.qa.opencart.testcases.LoginPageTest"></class>
+            <class name="com.qa.opencart.testcases.MyAccountPageTest"></class>
+            <class name="com.qa.opencart.testcases.ProductDetailsPageTest"></class>
+            <class name="com.qa.opencart.testcases.RegistrationPageTest"></class>
+        </classes>
+    </test>
+</suite>
